@@ -6,13 +6,9 @@ import MainBanner from "../components/MainBanner"
 import StyledHeader from "../components/StyledHeader"
 import SidebarList from "../components/SidebarList"
 import Newsletter from "../components/NewsLetter"
-<<<<<<< Updated upstream
 import TagCloud from "../components/TagCloud"
 import BlogEditor from "../components/BlogEditor"
-=======
 import styles from "../styles/Home.module.css"
->>>>>>> Stashed changes
-
 const Home = () => {
   const handleBlogSubmit = (blogData) => {
     console.log("Blog Submitted:", blogData)
@@ -24,17 +20,16 @@ const Home = () => {
       <Navbar />
 <div className={styles.topBanner}>
   <div><MainBanner />
-  <StyledHeader title="Editor's Pick" /></div>
-
-<<<<<<< Updated upstream
-      <RecentPosts />
+  <StyledHeader title="Editor's Pick" />
+  <RecentPosts />
       <MainBanner />
       <StyledHeader title="Editor's Pick" />
       <SidebarList />
       <Newsletter />
       <TagCloud />
-      <BlogEditor onSubmit={handleBlogSubmit} />
-=======
+      <BlogEditor onSubmit={handleBlogSubmit} /></div>
+
+      
 <div><RecentPosts />
 <SidebarList />
 <Newsletter /></div>
@@ -45,7 +40,6 @@ const Home = () => {
       
       
       
->>>>>>> Stashed changes
     </Layout>
   )
 }
