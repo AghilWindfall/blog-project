@@ -20,13 +20,13 @@ const Home = () => {
       <div className={styles.topBanner}>
         <div>
           <MainBanner />
-          <StyledHeader title="Editor's Pick" />
-          <RecentPosts />
-          <MainBanner />
-          <StyledHeader title="Editor's Pick" />
-          <SidebarList />
-          <Newsletter />
-          <TagCloud />
+          {/* <StyledHeader title="Editor's Pick" />
+          <RecentPosts /> */}
+          {/* <MainBanner /> */}
+          {/* <StyledHeader title="Editor's Pick" /> */}
+          {/* <SidebarList /> */}
+          {/* <Newsletter /> */}
+          
           {/* <BlogEditor onSubmit={handleBlogSubmit} /> */}
         </div>
 
@@ -34,6 +34,7 @@ const Home = () => {
           <RecentPosts />
           <SidebarList />
           <Newsletter />
+          <TagCloud />
         </div>
       </div>
     </Layout>
