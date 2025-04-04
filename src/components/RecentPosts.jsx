@@ -33,7 +33,7 @@ const RecentPosts = () => {
   const [activeTab, setActiveTab] = useState("recent")
 
   return (
-    <div className={styles.sidebarContainer}>
+    <div className={styles.sidebarContainerRecentPost}>
       <div className={styles.tabs}>
         <button
           className={activeTab === "recent" ? styles.active : ""}

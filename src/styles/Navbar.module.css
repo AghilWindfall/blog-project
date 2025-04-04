@@ -26,9 +26,20 @@
 }
 
 .navLinks li {
-  color: #707070;
-  font-size: 16px;
   cursor: pointer;
+  padding: .539rem 1.4rem;
+  color: #79889e;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Poppins, serif;
+    font-style: normal;
+}
+.navLinks li.active{
+  background: linear-gradient(90deg, #fe4f70 0, #ffa387 51%, #fe4f70);
+    background-size: 200% auto;
+    border-radius: 25px;
+    color: #fff;
+    padding: .539rem 1.4rem;
 }
 
 .activeButton {

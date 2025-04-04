@@ -22,6 +22,14 @@ const Navbar = () => {
       <ul className={styles.navLinks}>
         <li>
           <Link to="/">Home</Link>
+     
+          {/* <button className={styles.activeButton}>Home</button> */}
+          <li className={styles.active}>Home</li>
+       
+        <li>Blog Archive</li>
+        <li>Create Blog</li>
+        {/* <li>
+          Pages <span>▼</span>
         </li>
         <li>
           <Link to="/blog-archive">Blog Archive</Link>
