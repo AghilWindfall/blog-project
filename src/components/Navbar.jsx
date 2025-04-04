@@ -24,12 +24,13 @@ const Navbar = () => {
           <li>Home</li>
         </li>
         <li>Blog Archive</li>
-        <li>
+        <li>Create Blog</li>
+        {/* <li>
           Pages <span>▼</span>
         </li>
         <li>
           System Pages <span>▼</span>
-        </li>
+        </li> */}
         <li>Contact</li>
       </ul>
 
