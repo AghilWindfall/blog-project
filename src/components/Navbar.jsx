@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import styles from "../styles/Navbar.module.css"
 import {
   FaFacebookF,
@@ -19,19 +20,18 @@ const Navbar = () => {
       </div>
 
       <ul className={styles.navLinks}>
-     
-          {/* <button className={styles.activeButton}>Home</button> */}
-          <li>Home</li>
-       
-        <li>Blog Archive</li>
-        <li>Create Blog</li>
-        {/* <li>
-          Pages <span>▼</span>
+        <li>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          System Pages <span>▼</span>
-        </li> */}
-        <li>Contact</li>
+          <Link to="/blog-archive">Blog Archive</Link>
+        </li>
+        <li>
+          <Link to="/create-blog">Create Blog</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
       </ul>
 
       <div className={styles.socialIcons}>
