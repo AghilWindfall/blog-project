@@ -19,10 +19,10 @@ const Navbar = () => {
       </div>
 
       <ul className={styles.navLinks}>
-        <li>
+     
           {/* <button className={styles.activeButton}>Home</button> */}
           <li>Home</li>
-        </li>
+       
         <li>Blog Archive</li>
         <li>Create Blog</li>
         {/* <li>

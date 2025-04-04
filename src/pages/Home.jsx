@@ -6,8 +6,12 @@ import MainBanner from "../components/MainBanner"
 import StyledHeader from "../components/StyledHeader"
 import SidebarList from "../components/SidebarList"
 import Newsletter from "../components/NewsLetter"
+<<<<<<< Updated upstream
 import TagCloud from "../components/TagCloud"
 import BlogEditor from "../components/BlogEditor"
+=======
+import styles from "../styles/Home.module.css"
+>>>>>>> Stashed changes
 
 const Home = () => {
   const handleBlogSubmit = (blogData) => {
@@ -18,7 +22,11 @@ const Home = () => {
   return (
     <Layout>
       <Navbar />
+<div className={styles.topBanner}>
+  <div><MainBanner />
+  <StyledHeader title="Editor's Pick" /></div>
 
+<<<<<<< Updated upstream
       <RecentPosts />
       <MainBanner />
       <StyledHeader title="Editor's Pick" />
@@ -26,6 +34,18 @@ const Home = () => {
       <Newsletter />
       <TagCloud />
       <BlogEditor onSubmit={handleBlogSubmit} />
+=======
+<div><RecentPosts />
+<SidebarList />
+<Newsletter /></div>
+
+</div>
+      
+    
+      
+      
+      
+>>>>>>> Stashed changes
     </Layout>
   )
 }
