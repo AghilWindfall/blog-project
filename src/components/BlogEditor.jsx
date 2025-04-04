@@ -12,6 +12,10 @@ import styles from "../styles/BlogEditor.module.css"
 const BlogEditor = ({ onSubmit }) => {
   const [title, setTitle] = useState("")
   const [color, setColor] = useState("#000000")
+  const [author, setAuthor] = useState("")
+  const [tags, setTags] = useState("")
+  const [category, setCategory] = useState("")
+  const [featuredImage, setFeaturedImage] = useState(null)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
   const [showErrorModal, setShowErrorModal] = useState(false)
 
@@ -31,17 +35,36 @@ const BlogEditor = ({ onSubmit }) => {
   if (!editor) return null
 
   const handleSubmit = () => {
-    if (!title.trim() || !editor.getHTML().trim()) {
+    if (
+      !title.trim() ||
+      !editor.getHTML().trim() ||
+      !author.trim() ||
+      !tags.trim() ||
+      !category.trim() ||
+      !featuredImage
+    ) {
       setShowErrorModal(true)
       return
     }
 
-    onSubmit({ title, content: editor.getHTML() })
+    onSubmit({
+      title,
+      content: editor.getHTML(),
+      author,
+      tags: tags.split(",").map((tag) => tag.trim()),
+      category,
+      featuredImage,
+    })
+
     setShowSuccessModal(true)
 
     setTimeout(() => {
       setShowSuccessModal(false)
       setTitle("")
+      setAuthor("")
+      setTags("")
+      setCategory("")
+      setFeaturedImage(null)
       editor.commands.setContent("")
     }, 2000)
   }
@@ -133,6 +156,41 @@ const BlogEditor = ({ onSubmit }) => {
         <EditorContent editor={editor} />
       </div>
 
+      {/* Blog Meta Data Form */}
+      <div className={styles.metaForm}>
+        <input
+          type="text"
+          placeholder="Author Name"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+          className={styles.inputField}
+        />
+        <input
+          type="text"
+          placeholder="Tags (comma separated)"
+          value={tags}
+          onChange={(e) => setTags(e.target.value)}
+          className={styles.inputField}
+        />
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          className={styles.selectField}
+        >
+          <option value="">Select Category</option>
+          <option value="Technology">Technology</option>
+          <option value="Health">Health</option>
+          <option value="Education">Education</option>
+          <option value="Lifestyle">Lifestyle</option>
+        </select>
+        <h2>Featured Image</h2>
+        <input
+          type="file"
+          accept="image/*"
+          onChange={(e) => setFeaturedImage(e.target.files[0])}
+        />
+      </div>
+
       <button onClick={handleSubmit} className={styles.publishBtn}>
         🚀 Publish Blog
       </button>
@@ -141,7 +199,7 @@ const BlogEditor = ({ onSubmit }) => {
       {showErrorModal && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            <p>⚠️ Title and content are required!</p>
+            <p>⚠️ All fields are required!</p>
             <button onClick={() => setShowErrorModal(false)}>OK</button>
           </div>
         </div>
