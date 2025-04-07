@@ -15,18 +15,18 @@ import { HiMenu } from "react-icons/hi"
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
+      {/* <div className={styles.logo}>
         Katen<span className={styles.dot}>.</span>
-      </div>
-
+      </div> */}
+      <img
+        src="https://shalomworld.org/hubfs/Shalom%20Tidings%20Web%20Assets/Tidings%20Logo%20for%20Web-01.svg"
+        alt=""
+        width="100px"
+      />
       <ul className={styles.navLinks}>
-
-
         <li>
-
           <Link to="/">Home</Link>
         </li>
-
 
         {/* <button className={styles.activeButton}>Home</button> */}
         {/* <li className={styles.active}>Home</li>
