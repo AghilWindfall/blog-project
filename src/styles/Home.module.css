@@ -2,3 +2,6 @@
 display: flex;
 gap: 60px;
 }
+.leftSection{
+    width: 86%;
+}

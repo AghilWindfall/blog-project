@@ -20,7 +20,7 @@ const Home = () => {
     <Layout>
       <Navbar />
       <div className={styles.topBanner}>
-        <div>
+        <div className={styles.leftSection}>
           <MainBanner />
           {/* <StyledHeader title="Editor's Pick" />
           <RecentPosts /> */}
@@ -30,6 +30,7 @@ const Home = () => {
           {/* <Newsletter /> */}
 
           {/* <BlogEditor onSubmit={handleBlogSubmit} /> */}
+          <BlogCard />
         </div>
 
         <div>
@@ -37,10 +38,11 @@ const Home = () => {
           <SidebarList />
           <Newsletter />
           <TagCloud />
-          <BlogCard />
-          <Footer />
+         
+          
         </div>
       </div>
+      <Footer />
     </Layout>
   )
 }
