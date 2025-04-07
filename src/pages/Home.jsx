@@ -9,6 +9,8 @@ import Newsletter from "../components/NewsLetter"
 import TagCloud from "../components/TagCloud"
 import BlogEditor from "../components/BlogEditor"
 import styles from "../styles/Home.module.css"
+import BlogCard from "../components/BlogCard"
+import Footer from "../components/Footer"
 const Home = () => {
   // const handleBlogSubmit = (blogData) => {
   //   console.log("Blog Submitted:", blogData)
@@ -26,7 +28,7 @@ const Home = () => {
           {/* <StyledHeader title="Editor's Pick" /> */}
           {/* <SidebarList /> */}
           {/* <Newsletter /> */}
-          
+
           {/* <BlogEditor onSubmit={handleBlogSubmit} /> */}
         </div>
 
@@ -35,6 +37,8 @@ const Home = () => {
           <SidebarList />
           <Newsletter />
           <TagCloud />
+          <BlogCard />
+          <Footer />
         </div>
       </div>
     </Layout>

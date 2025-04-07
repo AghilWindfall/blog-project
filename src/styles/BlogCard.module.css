@@ -1,0 +1,152 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  width: 600px;
+  align-items: flex-start;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardImage {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 16px;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.dot {
+  margin: 0 4px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 4px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #cbd5e0;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  width: 600px;
+  align-items: flex-start;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardImage {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 16px;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.dot {
+  margin: 0 4px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 4px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #cbd5e0;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

@@ -1,0 +1,119 @@
+.contactSection {
+  padding: 4rem 2rem;
+  background-color: #f5faff;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1d2a4d;
+}
+
+.infoCards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+.icon {
+  font-size: 2rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card h4 {
+  margin-bottom: 0.3rem;
+  color: #1d2a4d;
+}
+
+.card p {
+  color: #8a8fa3;
+}
+
+.contactContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.left {
+  max-width: 500px;
+}
+
+.left h3 {
+  font-size: 1.5rem;
+  color: #1d2a4d;
+  margin-bottom: 1rem;
+}
+
+.left p {
+  color: #8a8fa3;
+  line-height: 1.6;
+}
+
+.left ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+  color: #5a627a;
+}
+
+.left ul li {
+  margin-bottom: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.form input,
+.form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 999px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form textarea {
+  border-radius: 1rem;
+  resize: none;
+}
+
+.form button {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}

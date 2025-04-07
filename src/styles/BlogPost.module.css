@@ -1,0 +1,154 @@
+.postContainer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.contentWrapper {
+  padding: 30px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.info {
+  color: #888;
+  font-size: 14px;
+}
+
+.dot {
+  margin: 0 8px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1e2d3b;
+}
+
+.paragraph {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+  padding: 20px;
+  background: #f8f9fb;
+  border-left: 5px solid #ff4c60;
+  margin: 30px 0;
+  border-radius: 6px;
+}
+
+.socialShare {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.icons i {
+  font-size: 18px;
+  margin-left: 15px;
+  color: #19283f;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.icons i:hover {
+  color: #ff4c60;
+}
+
+.suggestedSection {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.suggestedHeading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.suggestedCards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  flex: 1 1 30%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.cardCategory {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+.cardDate {
+  font-size: 0.85rem;
+  color: #aaa;
+}

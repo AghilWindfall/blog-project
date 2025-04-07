@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.leftText {
+  color: #8e9aad;
+  font-size: 14px;
+}
+
+.leftText a {
+  color: #8e9aad;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+  color: #19283f;
+}
+
+.backToTop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ff4c60;
+  color: #ff4c60;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backToTop:hover {
+  background-color: #ff4c60;
+  color: #fff;
+}
+
+.arrowIcon {
+  font-size: 16px;
+}
