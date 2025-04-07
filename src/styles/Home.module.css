@@ -1,7 +1,13 @@
 .topBanner{
 display: flex;
 gap: 60px;
+@media only screen and (max-width: 1024px){
+    display: block;
+}
 }
 .leftSection{
     width: 86%;
+    @media only screen and (max-width: 1024px){
+        width: 100%;
+    }
 }

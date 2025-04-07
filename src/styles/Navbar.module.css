@@ -23,6 +23,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .navLinks li {
@@ -32,28 +35,39 @@
   font-size: 14px;
   font-weight: 400;
   font-family: Poppins, serif;
-    font-style: normal;
+  font-style: normal;
 }
-.navLinks li a.active{
+
+.navLinks li a.active {
   color: rgb(255, 255, 255) !important;
   background: linear-gradient(90deg, rgb(254, 79, 112) 0px, rgb(255, 163, 135));
   border-radius: 25px;
   padding: 0.539rem 1.4rem;
 }
-.navLinks li a{
+
+.navLinks li a {
   color: #79889e;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: Poppins, serif;
-    font-style: normal;
-    text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Poppins, serif;
+  font-style: normal;
+  text-decoration: none;
+  width: 86%;
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 }
-.navLinks li.active{
+
+.navLinks li.active {
   background: linear-gradient(90deg, #fe4f70 0, #ffa387 51%, #fe4f70);
-    background-size: 200% auto;
-    border-radius: 25px;
-    color: #fff;
-    padding: .539rem 1.4rem;
+  background-size: 200% auto;
+  border-radius: 25px;
+  color: #fff;
+  padding: .539rem 1.4rem;
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .activeButton {
@@ -69,6 +83,9 @@
 .socialIcons {
   display: flex;
   gap: 10px;
+  @media only screen and (max-width: 1024px){
+    display: none;
+}
 }
 
 .icon {
