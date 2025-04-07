@@ -1,11 +1,12 @@
 import React from "react"
 import BlogPost from "../components/BlogPost"
+import Layout from "../components/Layout"
 
 const BlogArchive = () => {
   return (
-    <div>
+    <Layout>
       <BlogPost />
-    </div>
+    </Layout>
   )
 }
 
