@@ -22,7 +22,7 @@ const Navbar = () => {
       <ul className={styles.navLinks}>
 
 
-        <li>
+        <li className={styles.active}>
 
           <Link to="/">Home</Link>
         </li>
