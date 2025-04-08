@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+} */
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
   background: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -30,26 +38,26 @@
 
 .navLinks li {
   cursor: pointer;
-  padding: .539rem 1.4rem;
+  padding: 0.539rem 1.4rem;
   color: #79889e;
   font-size: 14px;
   font-weight: 400;
-  font-family: Poppins, serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  /* font-size: 1rem; */
 }
-
 .navLinks li a.active {
   color: rgb(255, 255, 255) !important;
   background: linear-gradient(90deg, rgb(254, 79, 112) 0px, rgb(255, 163, 135));
   border-radius: 25px;
   padding: 0.539rem 1.4rem;
+  font-weight: bold;
 }
 
 .navLinks li a {
   color: #79889e;
   font-size: 14px;
   font-weight: 400;
-  font-family: Poppins, serif;
+  /* font-family: Poppins, serif; */
   font-style: normal;
   text-decoration: none;
   width: 86%;
@@ -64,7 +72,7 @@
   background-size: 200% auto;
   border-radius: 25px;
   color: #fff;
-  padding: .539rem 1.4rem;
+  padding: 0.539rem 1.4rem;
   @media only screen and (max-width: 1024px) {
     display: none;
   }
@@ -83,9 +91,9 @@
 .socialIcons {
   display: flex;
   gap: 10px;
-  @media only screen and (max-width: 1024px){
+  @media only screen and (max-width: 1024px) {
     display: none;
-}
+  }
 }
 
 .icon {
@@ -110,4 +118,9 @@
   justify-content: center;
   font-size: 18px;
   color: white;
+}
+
+.active {
+  color: #e63946; /* Example highlight color */
+  border-bottom: 2px solid #e63946;
 }

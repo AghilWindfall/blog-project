@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import styles from "../styles/Navbar.module.css"
 import {
   FaFacebookF,
@@ -15,37 +15,44 @@ import { HiMenu } from "react-icons/hi"
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      {/* <div className={styles.logo}>
-        Katen<span className={styles.dot}>.</span>
-      </div> */}
       <img
         src="https://shalomworld.org/hubfs/Shalom%20Tidings%20Web%20Assets/Tidings%20Logo%20for%20Web-01.svg"
-        alt=""
+        alt="logo"
         width="100px"
       />
+
       <ul className={styles.navLinks}>
-
-
-        <li className={styles.active}>
-          <Link to="/">Home</Link>
-        </li>
-
-        {/* <button className={styles.activeButton}>Home</button> */}
-        {/* <li className={styles.active}>Home</li>
-       
-        <li>Blog Archive</li>
-        <li>Create Blog</li>
-      <li>
-          Pages <span>▼</span>
-        </li> */}
         <li>
-          <Link to="/blog-archive">Blog Archive</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/create-blog">Create Blog</Link>
+          <NavLink
+            to="/blog-archive"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            Blog Archive
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink
+            to="/create-blog"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            Create Blog
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
 

@@ -5,11 +5,13 @@ import { Route, Routes } from "react-router-dom"
 import BlogArchive from "./pages/BlogArchive"
 import CreateBlog from "./pages/CreateBlog"
 import Contact from "./pages/Contact"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (
     <>
       {/* <Home /> */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog-archive" element={<BlogArchive />} />
