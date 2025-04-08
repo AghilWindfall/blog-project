@@ -2,14 +2,14 @@ import React from "react"
 import styles from "../styles/TagCloud.module.css"
 
 const tags = [
-  "Culture",
-  "Lifestyle",
-  "Pick",
-  "Trending",
-  "Fashion",
-  "Inspiration",
-  "Politic",
-  "Featured",
+  "Faith",
+  "Daily Devotion",
+  "Holy Spirit",
+  "Bible Study",
+  "Grace & Salvation",
+  "Christian Living",
+  "Worship",
+  "Scripture Reflection",
 ]
 
 const TagCloud = () => {

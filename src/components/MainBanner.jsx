@@ -6,16 +6,19 @@ const MainBanner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.BannerContain}>
-      <img src={dummyImage} alt="Banner" className={styles.bannerImage} />
-      <div className={styles.overlay}>
-        <span className={styles.tag}>Inspiration</span>
-        <h1 className={styles.title}>
-          5 Easy Ways You Can Turn Future Into Success
-        </h1>
-        <p className={styles.meta}>Katen Doe • 21 May 2021</p>
+        <img
+          src="https://143329335.fs1.hubspotusercontent-eu1.net/hubfs/143329335/ai-generated-8577733_1280.jpg"
+          alt="Banner"
+          className={styles.bannerImage}
+        />
+        <div className={styles.overlay}>
+          <span className={styles.tag}>Inspiration</span>
+          <h1 className={styles.title}>
+            Anchor for the Soul: Hope in Times of Uncertainty
+          </h1>
+          <p className={styles.meta}>Aghil P Wilson • 21 March 2025</p>
+        </div>
       </div>
-      </div>
-      
     </div>
   )
 }
