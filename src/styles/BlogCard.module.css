@@ -3,6 +3,19 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  @media (min-width: 700px)and (max-width: 1024px){
+    display: flex
+    ;
+        padding: 20px;
+        justify-content: center;
+        width: max-content;
+        margin: 0 auto;
+        flex-direction: column;
+}
+@media only screen and (max-width: 1024px){
+  align-items: center;
+  justify-content: center;
+}
 }
 
 .card {
@@ -17,6 +30,7 @@
   @media only screen and (max-width: 1024px){
     flex-direction: column;
     width: unset !important;
+    gap: 20px;
 }
 }
 
