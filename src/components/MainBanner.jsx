@@ -16,7 +16,7 @@ const MainBanner = () => {
           <h1 className={styles.title}>
             Anchor for the Soul: Hope in Times of Uncertainty
           </h1>
-          <p className={styles.meta}>Aghil P Wilson • 21 March 2025</p>
+          <p className={styles.meta}>Paul • 21 March 2025</p>
         </div>
       </div>
     </div>
