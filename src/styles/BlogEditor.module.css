@@ -7,17 +7,22 @@
   border-radius: 12px;
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
 }
 
 /* Title Input */
 .titleInput {
   width: 100%;
-  padding: 12px;
-  font-size: 20px;
+  padding: 12px 0px;
+  font-size: 1rem;
   margin-bottom: 12px;
   border-radius: 8px;
-  border: 2px solid #ddd;
+  border: 1px solid #ccc;
   transition: 0.3s;
+}
+.titleInput::placeholder{
+  padding-left: 8px;
+  font-size: 1rem;
 }
 .titleInput:focus {
   border-color: #007bff;
@@ -32,6 +37,7 @@
   padding: 8px;
   border-radius: 8px;
   margin-bottom: 12px;
+  flex-wrap: wrap;
 }
 .toolbar button {
   padding: 6px 10px;
@@ -113,10 +119,15 @@
   gap: 10px;
 }
 
+.inputField::placeholder{
+padding-left: 8px;
+font-size: 1rem;
+}
+
 .inputField,
 .selectField {
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
