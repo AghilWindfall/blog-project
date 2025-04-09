@@ -15,11 +15,12 @@ import { IoMdClose } from "react-icons/io"
 
 const Navbar = () => {
   const [showSearchModal, setShowSearchModal] = useState(false)
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
 
   const openSearch = () => setShowSearchModal(true)
   const closeSearch = () => {
-    setSearchModal(false)
+    setShowSearchModal(false)
     setSearchTerm("")
   }
 
@@ -91,20 +92,62 @@ const Navbar = () => {
           <button className={styles.iconButton} onClick={openSearch}>
             <FiSearch />
           </button>
-          <button className={styles.iconButton}>
-            <HiMenu />
+          <button
+            className={styles.iconButton}
+            onClick={() => setShowMobileMenu((prev) => !prev)}
+          >
+            {showMobileMenu ? <IoMdClose /> : <HiMenu />}
           </button>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      {showMobileMenu && (
+        <div className={styles.mobileMenu}>
+          <ul>
+            <li>
+              <NavLink to="/" onClick={() => setShowMobileMenu(false)}>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/blog-archive"
+                onClick={() => setShowMobileMenu(false)}
+              >
+                Blog Archive
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/create-blog"
+                onClick={() => setShowMobileMenu(false)}
+              >
+                Create Blog
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" onClick={() => setShowMobileMenu(false)}>
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+          <div className={styles.mobileSocialIcons}>
+            <FaFacebookF />
+            <FaTwitter />
+            <FaInstagram />
+            <FaPinterestP />
+            <FaMediumM />
+            <FaYoutube />
+          </div>
+        </div>
+      )}
 
       {/* Search Modal */}
       {showSearchModal && (
         <div className={styles.searchModalOverlay}>
           <div className={styles.searchModal}>
-            <button
-              className={styles.closeButton}
-              onClick={() => setShowSearchModal(false)}
-            >
+            <button className={styles.closeButton} onClick={closeSearch}>
               <IoMdClose size={28} />
             </button>
             <h2>🔍 Search Blogs</h2>
@@ -115,7 +158,6 @@ const Navbar = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            {/* Future: map and show results below */}
           </div>
         </div>
       )}

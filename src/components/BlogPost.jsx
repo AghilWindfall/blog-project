@@ -8,7 +8,7 @@ const BlogPost = () => {
   const navigate = useNavigate()
 
   const handleCardClick = () => {
-    navigate("/blog-archive-suggested")
+    navigate("/blog-archive")
   }
   return (
     <div className={styles.postContainer}>
