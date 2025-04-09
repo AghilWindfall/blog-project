@@ -138,6 +138,7 @@
   align-items: center;
   animation: fadeIn 0.3s ease-in-out;
   padding: 0px 15px;
+  
 }
 
 .searchModal {
@@ -149,6 +150,9 @@
   position: relative;
   text-align: center;
   animation: scaleIn 0.3s ease-in-out;
+  @media only screen and (max-width: 400px){
+    width: 70%;
+  }
 }
 
 .closeButton {

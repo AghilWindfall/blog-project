@@ -29,8 +29,14 @@
   transition: transform 0.2s ease;
   @media only screen and (max-width: 1024px){
     flex-direction: column;
-    width: unset !important;
+   
     gap: 20px;
+}
+@media (min-width:700px) and (max-width: 1024px){
+  width: unset !important;
+}
+@media(max-width: 474px){
+  width: unset !important;
 }
 }
 
@@ -44,6 +50,9 @@
   object-fit: cover;
   border-radius: 12px;
   margin-right: 16px;
+  @media only screen and (max-width: 1024px){
+    width: 100% !important;
+  }
 }
 
 .cardContent {
@@ -80,6 +89,9 @@
   font-weight: 700;
   color: #1a202c;
   margin: 4px 0;
+  @media only screen and (max-width: 700px){
+  max-width: 300px;
+  }
 }
 
 .description {
@@ -114,6 +126,9 @@
   width: 600px;
   align-items: flex-start;
   transition: transform 0.2s ease;
+  @media only screen and (max-width: 700px){
+    max-width: 332px;
+    }
 }
 
 .card:hover {
