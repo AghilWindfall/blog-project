@@ -268,8 +268,9 @@ const TopicPage = () => {
             No blogs available for this topic yet.
           </p>
         )}
+
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   )
 }
