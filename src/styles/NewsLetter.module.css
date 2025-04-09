@@ -100,7 +100,7 @@
 }
 
 .popupCloseBtn {
-  background-color: #0070f3;
+  background-color: #ff5e62;
   color: white;
   padding: 0.6rem 1.5rem;
   border: none;
@@ -110,7 +110,7 @@
 }
 
 .popupCloseBtn:hover {
-  background-color: #0056c1;
+  background-color: #ff5e62;
 }
 
 @keyframes fadeIn {
