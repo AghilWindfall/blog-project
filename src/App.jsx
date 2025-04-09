@@ -6,6 +6,7 @@ import BlogArchive from "./pages/BlogArchive"
 import CreateBlog from "./pages/CreateBlog"
 import Contact from "./pages/Contact"
 import ScrollToTop from "./components/ScrollToTop"
+import TopicPage from "./pages/TopicPage"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blog-archive" element={<BlogArchive />} />
         <Route path="/create-blog" element={<CreateBlog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/topics/:slug" element={<TopicPage />} />
       </Routes>
     </>
   )

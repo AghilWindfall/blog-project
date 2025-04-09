@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p className={styles.leftText}>
-        © 2021 Katen. Template by <a href="#">ThemeGer</a>.
+        © 2025 Shalom Tiding <a href="#">All Rights Reserved.</a>
       </p>
 
       <div className={styles.socialIcons}>
@@ -26,7 +26,10 @@ const Footer = () => {
         <FaYoutube />
       </div>
 
-      <button className={styles.backToTop}>
+      <button
+        className={styles.backToTop}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
         <IoIosArrowUp className={styles.arrowIcon} />
         Back to Top
       </button>

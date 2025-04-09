@@ -124,3 +124,67 @@
   color: #e63946; /* Example highlight color */
   border-bottom: 2px solid #e63946;
 }
+
+.searchModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 10, 0.85);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.searchModal {
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

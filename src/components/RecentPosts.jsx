@@ -1,5 +1,5 @@
-// RecentPosts.jsx
 import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import styles from "../styles/RecentPosts.module.css"
 
 const recentPosts = [
@@ -58,6 +58,11 @@ const popularPosts = [
 
 const RecentPosts = () => {
   const [activeTab, setActiveTab] = useState("recent")
+  const navigate = useNavigate()
+
+  // const handlePostClick = () => {
+  //   navigate("/blog-archive")
+  // }
 
   return (
     <div className={styles.sidebarContainerRecentPost}>
@@ -77,7 +82,12 @@ const RecentPosts = () => {
       </div>
       <div className={styles.postsList}>
         {(activeTab === "recent" ? recentPosts : popularPosts).map((post) => (
-          <div key={post.id} className={styles.postItem}>
+          <div
+            key={post.id}
+            className={styles.postItem}
+            // onClick={handlePostClick}
+            // style={{ cursor: "pointer" }}
+          >
             <img src={post.img} alt={post.title} className={styles.postImage} />
             <div className={styles.postDetails}>
               <h4 className={styles.postTitle}>{post.title}</h4>

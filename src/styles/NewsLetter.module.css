@@ -5,7 +5,6 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 60px;
-  
 }
 
 .title {
@@ -63,4 +62,73 @@
 .terms a {
   color: #ff5e62;
   text-decoration: none;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 1000;
+}
+
+.popupBox {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: slideIn 0.4s ease;
+}
+
+.popupBox h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.popupBox p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.popupCloseBtn {
+  background-color: #0070f3;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.popupCloseBtn:hover {
+  background-color: #0056c1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

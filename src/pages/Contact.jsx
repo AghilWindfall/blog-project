@@ -1,10 +1,25 @@
-import React from "react"
+import React, { useState, useRef } from "react"
 import styles from "../styles/ContactUs.module.css"
 import Navbar from "../components/Navbar"
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
 
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false)
+  const formRef = useRef(null) // useRef to reset the form
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setShowModal(true)
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
+    if (formRef.current) {
+      formRef.current.reset() // Reset the form fields
+    }
+  }
+
   return (
     <Layout>
       <Navbar />
@@ -47,15 +62,27 @@ const Contact = () => {
             </ul>
           </div>
 
-          <form className={styles.form}>
-            <input type="text" placeholder="First name*" />
+          <form className={styles.form} onSubmit={handleSubmit} ref={formRef}>
+            <input type="text" placeholder="First name*" required />
             <input type="text" placeholder="Last name" />
-            <input type="email" placeholder="Email*" />
+            <input type="email" placeholder="Email*" required />
             <textarea placeholder="Your message here..." rows={4} />
             <button type="submit">Get Started</button>
           </form>
         </div>
       </section>
+
+      {/* Modal */}
+      {showModal && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modal}>
+            <h2>🎉 Form Submitted Successfully!</h2>
+            <p>Thank you for reaching out. We'll get back to you soon.</p>
+            <button onClick={closeModal}>Close</button>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </Layout>
   )

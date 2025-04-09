@@ -2,8 +2,14 @@ import React from "react"
 import styles from "../styles/BlogPost.module.css"
 import AuthorCard from "./AuthorCard"
 import Navbar from "./Navbar"
+import { useNavigate } from "react-router-dom"
 
 const BlogPost = () => {
+  const navigate = useNavigate()
+
+  const handleCardClick = () => {
+    navigate("/blog-archive-suggested")
+  }
   return (
     <div className={styles.postContainer}>
       <Navbar />
@@ -119,7 +125,12 @@ const BlogPost = () => {
         <h2 className={styles.suggestedHeading}>Suggested Posts</h2>
         <div className={styles.suggestedCards}>
           {[1, 2, 3].map((i) => (
-            <div key={i} className={styles.card}>
+            <div
+              key={i}
+              className={styles.card}
+              onClick={handleCardClick}
+              style={{ cursor: "pointer" }}
+            >
               <img
                 src={`https://shalomworld.org/hubfs/1%20(2).jpg`}
                 alt="Suggested Blog"

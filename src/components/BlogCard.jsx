@@ -46,6 +46,28 @@ const cardData = [
     title: "AI In 2025: What To Expect",
     description: "Uncover the strength found in yielding to God's will....",
   },
+  {
+    id: 5,
+    image: "https://shalomworld.org/hubfs/1-1.jpg",
+    avatar: "https://randomuser.me/api/portraits/men/65.jpg",
+    author: "Chandler",
+    category: "Grace & Redemption",
+    date: "12 Mar 2021",
+    title: "The Power of Prayer in Daily Life",
+    description:
+      "The Power of Prayer in Daily Life.Prayer is not a ritual — it's a relationship...",
+  },
+  {
+    id: 6,
+    image: "https://shalomworld.org/hubfs/1%20(2).jpg",
+    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    author: "Raichel",
+    category: "Faith & Devotion",
+    date: "24 May 2021",
+    title: "Walking in His Light: A Journey of Faith",
+    description:
+      "When the world gets loud, His still small voice calms our hearts...",
+  },
 ]
 
 const BlogCard = () => {
