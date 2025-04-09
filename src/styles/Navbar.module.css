@@ -137,6 +137,7 @@
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.3s ease-in-out;
+  padding: 0px 15px;
 }
 
 .searchModal {
@@ -160,7 +161,7 @@
 }
 
 .searchInput {
-  width: 100%;
+  width: -webkit-fill-available;
   padding: 1rem;
   font-size: 1.2rem;
   border-radius: 8px;
