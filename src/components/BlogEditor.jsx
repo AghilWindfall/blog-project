@@ -18,6 +18,7 @@ const BlogEditor = ({ onSubmit }) => {
   const [featuredImage, setFeaturedImage] = useState(null)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
   const [showErrorModal, setShowErrorModal] = useState(false)
+  const [language, setLanguage] = useState("")
 
   const editor = useEditor({
     extensions: [
@@ -48,6 +49,7 @@ const BlogEditor = ({ onSubmit }) => {
     }
 
     onSubmit({
+      language,
       title,
       content: editor.getHTML(),
       author,
@@ -71,6 +73,25 @@ const BlogEditor = ({ onSubmit }) => {
 
   return (
     <div className={styles.editorContainer}>
+      <div className={styles.languageSelector}>
+        <label htmlFor="language">Select Language:</label>
+        <select
+          id="language"
+          value={language}
+          onChange={(e) => setLanguage(e.target.value)}
+          className={styles.selectField}
+        >
+          <option value="">Choose Language</option>
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="French">French</option>
+          <option value="German">German</option>
+          <option value="Malayalam">Malayalam</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Tamil">Tamil</option>
+        </select>
+      </div>
+
       <input
         type="text"
         placeholder="Enter Blog Title"
@@ -209,7 +230,10 @@ const BlogEditor = ({ onSubmit }) => {
       {showSuccessModal && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            <p>✅ Blog posted successfully!</p>
+            <p>
+              ✅ Your blog has been submitted for review. It will go live once
+              approved.
+            </p>
           </div>
         </div>
       )}

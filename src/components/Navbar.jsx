@@ -26,11 +26,14 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        <img
-          src="https://shalomworld.org/hubfs/Shalom%20Tidings%20Web%20Assets/Tidings%20Logo%20for%20Web-01.svg"
-          alt="logo"
-          width="100px"
-        />
+        <NavLink to="/">
+          <img
+            src="https://shalomworld.org/hubfs/Shalom%20Tidings%20Web%20Assets/Tidings%20Logo%20for%20Web-01.svg"
+            alt="logo"
+            width="100px"
+            style={{ cursor: "pointer" }}
+          />
+        </NavLink>
 
         <ul className={styles.navLinks}>
           <li>

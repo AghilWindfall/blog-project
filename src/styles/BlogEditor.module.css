@@ -128,3 +128,22 @@
   outline: none;
   box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
 }
+
+.languageSelector {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.languageSelector label {
+  font-weight: 500;
+  color: #333;
+}
+
+.selectField {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
